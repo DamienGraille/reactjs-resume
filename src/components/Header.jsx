@@ -6,7 +6,7 @@ class Header extends Component {
         <h1 >
         Damien Graille
         </h1>
-        <p class="title2">web developer
+        <p>web developer
         </p>
       </div>);
     }
