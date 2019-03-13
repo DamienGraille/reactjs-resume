@@ -13,7 +13,7 @@ class Header extends Component {
         Targetting an entry level developer job
         </h4>
         <ul><span>
-          {this.props.info.infos.map((data)=> <li>{data}</li>)
+          {this.props.info.infos.map((data)=> <li><span>{data[0]} </span><span>{data[1]}</span></li> )
         }
         </span>
         <span class="list">

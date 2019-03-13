@@ -8,9 +8,9 @@ import Map from './components/Map';
 
 class App extends Component {
   render() {
-    var info ={
-     infos:["mobile", "email", "github", "location"],
-     infodata:["07760586545","damiengraille@gmail.com","DamienGraille","London"]
+    let info ={
+      infos:[["mobile","07760586545"], ["email","damiengraille@gmail.com"],["github","DamienGraille"],["location", "London"]],
+     infodata:["07760586545","DamienGraille","London"]
   };
     return (
       
@@ -28,5 +28,7 @@ class App extends Component {
     );
   }
 }
+
+ 
 
 export default App;
