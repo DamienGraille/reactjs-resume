@@ -7,6 +7,7 @@ class Header extends Component {
         <h1 >
         {this.props.name}
         </h1>
+        <div></div>
         <div class="title2">{this.props.title}
         </div>
         <h4>
@@ -16,11 +17,8 @@ class Header extends Component {
           {this.props.info.infos.map((data)=> <li><span>{data[0]} </span><span>{data[1]}</span></li> )
         }
         </span>
-        <span class="list">
-        {this.props.info.infodata.map((data)=> <li>{data}</li>)
-        }
-        </span>
         </ul>
+        <Info/>
       </div>);
     }
   }
