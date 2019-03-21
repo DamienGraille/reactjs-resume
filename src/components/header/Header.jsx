@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Info from './Info';
+import Skills from './Skills';
+
 
 class Header extends Component {
     render() {
@@ -7,19 +10,21 @@ class Header extends Component {
         <h1 >
         {this.props.name}
         </h1>
-        <div></div>
+         
+        
         <div class="title2">{this.props.title}
         </div>
         <h4>
         Targetting an entry level developer job
         </h4>
-        <ul><span>
-          {this.props.info.infos.map((data)=> <li><span>{data[0]} </span><span>{data[1]}</span></li> )
-        }
-        </span>
-        </ul>
-        <Info/>
-      </div>);
+        <Info info={this.props.info}/>
+        <h4>
+        Skills at a glance
+        </h4>
+        <Skills listskills={this.props.listskills}/>
+      </div>
+      
+      );
     }
   }
 

@@ -8,21 +8,23 @@ import Map from './components/Map';
 
 class App extends Component {
   render() {
-    let info ={
-      infos:[["mobile","07760586545"], ["email","damiengraille@gmail.com"],["github","DamienGraille"],["location", "London"]],
-     infodata:["07760586545","DamienGraille","London"]
-  };
+    let info =[["mobile","07760586545"], ["email","damiengraille@gmail.com"],["github","DamienGraille"],["location", "London"]]; 
+  
+
+  let listskills=["HTML5", "CSS3", "Javascript: ES6, React, Node", "Problem Analysis and Problem-Solving"];
     return (
       
       <div className="App">  
        
             <Header name={"Damien Graille"} age={"web developer"}
-            info={info}
+            info={info} listskills= {listskills}
             />
             <Work/>
             <Projects/>
             <Education/>
             <Map/>
+
+
             
       </div>
     );
